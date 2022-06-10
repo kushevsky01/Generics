@@ -20,7 +20,7 @@ public class LinkedList<T> {
         head = null;
     }
 
-    public <E extends T> void Add(E data) {
+    public <E> void Add(T data) {
         Node tmp = new Node(data);
         Node tmp2 = head;
         if (tmp2 == null) {
@@ -34,7 +34,7 @@ public class LinkedList<T> {
     }
 
 
-    public <E extends T> E get(int number) throws ListException {
+    public <E > E get(int number) throws ListException {
 
         int i = 0;
         Node tmp = head;

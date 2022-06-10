@@ -10,12 +10,12 @@ public class Main {
 
         try {
             list.Add(20);
-            list.Add(20);
+            list.Add(12);
             list.Add(30);
-            list.get(2);
+            list.get(12);
             list.remove(20);
             list.remove(20);
-            list.remove(30);
+            list.remove(12);
             list.print();
 
         } catch (EmptyListException | IndexOutOfBoundsException | TypeException e) {
