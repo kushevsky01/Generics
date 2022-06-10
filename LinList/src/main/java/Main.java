@@ -5,22 +5,19 @@ import Exceptions.IndexOutOfBoundsException;
 
 public class Main {
     public static void main(String[] args) throws ListException {
-        LinkedList<Integer> node = new LinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         int n;
 
         try {
-            node.Add(20);
+            list.Add(20);
+            list.Add(20);
+            list.Add(30);
+            list.get(2);
+            list.remove(20);
+            list.remove(20);
+            list.remove(30);
+            list.print();
 
-            node.Add(20);
-            node.Add(30);
-            node.get(2);
-
-
-            node.remove(20);
-            ;
-
-
-            node.print();
         } catch (EmptyListException | IndexOutOfBoundsException | TypeException e) {
             e.Message();
         }

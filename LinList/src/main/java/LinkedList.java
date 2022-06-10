@@ -17,7 +17,7 @@ public class LinkedList<T> {
     }
 
     LinkedList() {
-        this.head = null;
+        head = null;
     }
 
     public <E extends T> void Add(E data) {

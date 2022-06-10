@@ -12,13 +12,13 @@ class LinkedListTest {
     @Test
     void getTest() throws ListException {
 
-        LinkedList<Integer> node = new LinkedList<>();
-        node.Add(15);
-        node.Add(20);
+        LinkedList<Integer> list = new LinkedList<>();
+        list.Add(15);
+        list.Add(20);
         Boolean thrown = false;
 
         try {
-            node.get(4);
+            list.get(4);
         } catch (IndexOutOfBoundsException e) {
             thrown = true;
         }
@@ -28,11 +28,11 @@ class LinkedListTest {
 
     @Test
     void getTest1() throws ListException {
-        LinkedList<Integer> node = new LinkedList<>();
-        node.Add(15);
-        node.Add(20);
+        LinkedList<Integer> list = new LinkedList<>();
+        list.Add(15);
+        list.Add(20);
 
-        Object n = node.get(1);
+        Object n = list.get(1);
         assertEquals(20, n);
 
 
@@ -40,11 +40,11 @@ class LinkedListTest {
 
     @Test
     void getTest2() throws ListException {
-        LinkedList<Integer> node = new LinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         Boolean thrown = false;
 
         try {
-            node.get(0);
+            list.get(0);
         } catch (EmptyListException e) {
             thrown = true;
         }
@@ -54,30 +54,30 @@ class LinkedListTest {
 
     @Test
     void addTest() {
-        LinkedList<Integer> node = new LinkedList<>();
-        node.Add(15);
-        node.Add(20);
+        LinkedList<Integer> list = new LinkedList<>();
+        list.Add(15);
+        list.Add(20);
 
-        assertEquals(2, node.size());
+        assertEquals(2, list.size());
     }
 
     @Test
     void removeTest1() throws ListException {
-        LinkedList<Integer> node = new LinkedList<>();
-        node.Add(15);
-        node.Add(20);
-        node.remove(20);
-        node.remove(15);
-        assertEquals(0, node.size());
+        LinkedList<Integer> list = new LinkedList<>();
+        list.Add(15);
+        list.Add(20);
+        list.remove(20);
+        list.remove(15);
+        assertEquals(0, list.size());
     }
 
     @Test
     void removeTest2() throws ListException {
-        LinkedList<Integer> node = new LinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         Boolean thrown = false;
 
         try {
-            node.remove(15);
+            list.remove(15);
         } catch (EmptyListException e) {
             thrown = true;
         }
@@ -88,464 +88,10 @@ class LinkedListTest {
 
     @Test
     void sizeTest() {
-        LinkedList<Integer> node = new LinkedList<>();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        node.Add(10);
-        node.Add(20);
-        assertEquals(2, node.size());
+        LinkedList<Integer> list = new LinkedList<>();
+        list.Add(10);
+        list.Add(20);
+        assertEquals(2, list.size());
 
     }
 }
