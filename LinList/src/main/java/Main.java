@@ -5,7 +5,7 @@ import Exceptions.IndexOutOfBoundsException;
 
 public class Main {
     public static void main(String[] args) throws ListException {
-        Node<Integer> node = new Node<Integer>();
+        LinkedList<Integer> node = new LinkedList<>();
         int n;
 
         try {
